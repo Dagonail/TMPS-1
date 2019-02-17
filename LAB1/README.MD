@@ -20,7 +20,7 @@ Food - meals, drinks and menus.
 **[Option](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/Option.cs)**
 class which gives one option at a time.
 As per theory: *exactly one instance of a class and is accessible to clients from a well-know access point.*
-So it creates its own unique instance which represents client choice from meal, drink and menu.
+So it creates its own unique instance which represents client choice for meal, drink and menu.
   
   This choice is **[ChosenOption](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/ChosenOption.cs) class** which represents the **Abstract Factory**. It creates the link to
   **MealFactory**.
