@@ -49,5 +49,5 @@ the same construction process can create different representations.*
     - Theory: *Prototype - Specifies the kinds of objects to create using a prototypical instance, and create
 new objects by copying this prototype*
       
-      2.1. **[Menu](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/Menu.cs{}) class** returns a clone of a meal and a drink implemented previously.
+      2.1. **[Menu](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/Menu.cs) class** returns a clone of a meal and a drink implemented previously.
       
