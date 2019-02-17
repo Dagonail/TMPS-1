@@ -51,3 +51,9 @@ new objects by copying this prototype*
       
       2.1. **[Menu](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/Menu.cs) class** returns a clone of a meal and a drink implemented previously.
       
+After running main **[Program](https://github.com/Secoranda/TMPS/blob/master/LAB1/LAB1/LAB1/Program.cs)**
+on the screen is obtained an output. See [screenshots](https://github.com/Secoranda/TMPS/tree/master/LAB1/Screens)
+
+In order to do this laboratory was used mainly:
+1. Site: *www.codeproject.com;*
+2. Book: *Design Patterns :Elements of Reusable Object-Oriented Software,Produced by KevinZhang*
