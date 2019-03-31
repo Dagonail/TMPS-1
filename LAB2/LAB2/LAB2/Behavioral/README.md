@@ -3,7 +3,7 @@
 ## Task
 Implement 5 behavioral patterns
 
-*NOTE: This program was developed implementing 5 patterns each time, and each time from different category. Please, don't jugde the logic of the project. Main purpose was to studey patterns*
+*NOTE: This program was developed implementing 5 patterns each time, and each time from different category. Please, don't jugde the logic of the project. Main purpose was to study the patterns. Is hard to link them or to create a logic in this kind of development*
 
 ## What was implemented?
 1. Chain of Responsability
