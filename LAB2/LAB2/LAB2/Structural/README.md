@@ -35,10 +35,13 @@ checks if the chosen meal is available or client should wait the kitchen.
 
 Decorator: *Attach additional responsibilities to an object dynamically. Decorators provide
 
-![order](https://user-images.githubusercontent.com/24621285/55293854-a7e5c880-5403-11e9-923b-aa452e8df81d.PNG)
+
+
 a flexible alternative to subclassing for extending functionality.*
 Was implemented class **AdultClientDecor**.
 Our decorator will advice if the new client has disabilities or not. In order to that it can be served first.
+
+![order](https://user-images.githubusercontent.com/24621285/55293854-a7e5c880-5403-11e9-923b-aa452e8df81d.PNG)
 
 5. **Farcade** pattern
 
