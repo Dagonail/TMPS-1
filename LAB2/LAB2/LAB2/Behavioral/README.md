@@ -26,7 +26,8 @@ The command design pattern allows you to store a list of actions that you can ex
 So in our case, we'll consider a possible cancel or change after order is done. It stores the Menus.
 
 **Iterator** is [here](https://github.com/Secoranda/TMPS/blob/master/LAB2/LAB2/LAB2/Behavioral/Iterator.cs)
-Theory: *The Iterator Design Pattern allows you abstract out the details of traversing collections. For example, you may different types of collections in your applications, such as an array, a linked list, or a generic dictionary. For whichever the types of collections you have, you will need to traverse, or iterate through the items in the collections. *
+
+Theory: *The Iterator Design Pattern allows you abstract out the details of traversing collections. For example, you may different types of collections in your applications, such as an array, a linked list, or a generic dictionary. For whichever the types of collections you have, you will need to traverse, or iterate through the items in the collections.*
 
 **IIterator**  interface defines all the methods needed to traverse the collection.
 The **IAggregate** interface defines the methods for the client. The methods that it defines allows the client code not to be bothered with the details on how the collection is traversed. It has the GetAll method that the client can call. Same we'll store in collection menus.
