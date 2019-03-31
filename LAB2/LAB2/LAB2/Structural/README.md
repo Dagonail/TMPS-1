@@ -33,11 +33,7 @@ checks if the chosen meal is available or client should wait the kitchen.
 
 4. **Decorator** pattern
 
-Decorator: *Attach additional responsibilities to an object dynamically. Decorators provide
-
-
-
-a flexible alternative to subclassing for extending functionality.*
+Decorator: *Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.*
 Was implemented class **AdultClientDecor**.
 Our decorator will advice if the new client has disabilities or not. In order to that it can be served first.
 
@@ -45,7 +41,9 @@ Our decorator will advice if the new client has disabilities or not. In order to
 
 5. **Farcade** pattern
 
-Farcade: *The façade design pattern allows you to provide a simplified interface from multiple class libraries. It provides a simple interface that hides the complexity of the class libraries being used. *
+Farcade: 
+*The façade design pattern allows you to provide a simplified interface from multiple class libraries. 
+It provides a simple interface that hides the complexity of the class libraries being used.*
 
 Same, were implemented 2 classes for Farcade(**FarcadeToy** and **FarcadeOrder**), and both of them hide the complexity of Proxy pattern classes.
 So they wrap all the complexity od Proxy patterns.
