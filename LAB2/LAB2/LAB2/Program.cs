@@ -1,4 +1,5 @@
-﻿using LAB2.Structural;
+﻿using LAB2.Behavioral;
+using LAB2.Structural;
 using System;
 using System.Collections.Generic;
 
@@ -77,8 +78,54 @@ namespace LAB2
                 Console.WriteLine("...............................is ...");
                 new FarcadeOrder(m).PointOfSale(rand.NextDouble() >= 0.5);
             }
-        
-           
+
+            Console.WriteLine("\nBehavioral Patterns:");
+
+            Console.WriteLine("-----------------Chain of Responsabilities Pattern-----------------");
+            CommandType comm = new CommandType();
+            comm.Command = new PerPhone();
+            comm.CommandResult();
+
+            comm.Command = new Local();
+            comm.CommandResult();
+
+            comm.Command = new Car();
+            comm.CommandResult();
+
+            Console.WriteLine("-----------------Strategy Pattern-----------------");
+            CommandApprover b = new Manager();
+            CommandApprover a = new Worker();
+            a.SetNextApprover(b);
+            a.ApproveCommand(new Command(false));
+            a.ApproveCommand(new Command(true));
+
+            Console.WriteLine("-----------------Iterator Pattern-----------------");
+            IAggregate<IMenu> aggregate = new ConcereteAggregate<IMenu>();
+            aggregate.AddItem(menu[0]);
+            aggregate.AddItem(menu[1]);
+            aggregate.AddItem(menu[2]);
+
+            foreach (IMenu par in aggregate.GetAll())
+            {
+                Console.WriteLine(par);
+            }
+
+            Console.WriteLine("-----------------Observer Pattern-----------------");
+            ISubject<IMenu> subject = new ConcreteSubject<IMenu>();
+            Behavioral.IObserver<IMenu> ob1 = new ConcreteObserver<IMenu>(menu[0]);
+            Behavioral.IObserver<IMenu> ob2 = new ConcreteObserver<IMenu>(menu[1]);
+            subject.Attach(ob1);
+            subject.Attach(ob2);
+            subject.SetState(menu1);
+
+
+            Console.WriteLine("-----------------Command Pattern-----------------");
+            Invoker i = new Invoker();
+            ICommand comm1 = new UndoCommand(menu[0]);
+            i.AddCommand(comm1);
+            ICommand comm2 = new UndoCommand(menu[1]);
+            i.AddCommand(comm2);
+            i.Run();
 
             Console.ReadKey();
 

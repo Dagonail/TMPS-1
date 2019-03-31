@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\ChainofRes.cs" />
+    <Compile Include="Behavioral\Command.cs" />
+    <Compile Include="Behavioral\Iterator.cs" />
+    <Compile Include="Behavioral\Observer.cs" />
+    <Compile Include="Behavioral\Strategy.cs" />
     <Compile Include="Creational\ChosenOption.cs" />
     <Compile Include="Creational\Drink.cs" />
     <Compile Include="Creational\DrinkFactory.cs" />
@@ -59,5 +64,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

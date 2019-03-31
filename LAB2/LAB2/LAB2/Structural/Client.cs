@@ -48,13 +48,14 @@ namespace LAB2.Structural
             private string messagep;
             public ClientKid(string message) { messagep = message; }
             public void Kid()
-             { 
+            { 
                 Console.WriteLine($"\nChild client:{messagep}. Take order...");
             }
             public void Order()
             {
                 Console.WriteLine("Available...");
             }
+      
          }
    
        
@@ -96,6 +97,7 @@ namespace LAB2.Structural
             ProxyOrderGender pr = new ProxyOrderGender(free, free2);
             pr.CheckToy(kid);
         }
+        
     }
     //proxy2
     public class ProxyOrderGender

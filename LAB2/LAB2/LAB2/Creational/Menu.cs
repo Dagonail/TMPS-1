@@ -11,13 +11,13 @@ namespace LAB2
     {
         Menu1, Menu2, Menu3
     }
-    public interface IMenu
+   public partial interface IMenu
     {
        IMenu Clone();
         void MenuCl(IClient client);
     }
 
-    class Menu : IMenu
+    public partial class Menu : IMenu
     {
         public Name Name { get; }
         public Meal Meal { get; }
@@ -45,5 +45,6 @@ namespace LAB2
             return string.Format("{0}\n MEAL:{1}\n DRINK:{2}\n",
                                 Name, Meal, Drink );
         }
+
     }
 }
